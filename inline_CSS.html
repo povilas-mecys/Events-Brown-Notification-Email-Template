@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Inline CSS</title>
+    <style>
+        @media print {
+            div {
+                background-color: #fff !important;
+                border: 0px !important;
+                color: #000 !important;
+                height: auto !important;
+                margin: 0px !important;
+                min-height: unset !important;
+                min-width: unset !important;
+                max-width: unset !important;
+                padding: 0px !important;
+                text-align: left !important;
+                width: unset !important;
+            }
+
+            h1 {
+                color: #000 !important;
+                font-weight: bold !important;
+                margin-bottom: 16px !important;
+                text-align: left !important;
+            }
+
+            .contact_info {
+                margin-top: 16px !important;
+                padding: 0px !important;
+                text-align: left !important;
+            }
+
+            .button {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color:#F0F2F3;margin:0;min-height:100%;padding:24px 0 40px 0;width:100%;">
+
+    <div style="background-color:#ffffff;border-radius:4px;margin:auto;max-width:600px;overflow:hidden;width:96%;">
+
+        <!-- Header -->
+        <div class="header" style="background-color:#4E3629;border-bottom:2px solid #F0F2F3;padding:40px 32px;">
+            <h1
+                style="color:#ffffff;font-family:'Times New Roman', serif;font-size:40px;font-style:normal;font-weight:normal;margin:0;padding:0;text-align:center;">
+                Events@Brown</h1>
+        </div>
+
+        <!-- Main -->
+        <div class="main" style="color:#434343;font-family:Helvetica, Arial, sans-serif;">
+
+            <!-- Message -->
+            <div class="content" style="border-bottom:2px solid #F0F2F3;padding:32px;">
+                <h2 class="title"
+                    style="font-size:24px;font-weight:bold;line-height:28px;margin:0 0 16px 0;">
+                    Events@Brown notification: Test - RC: Registration Received</h2>
+
+                <p class="message"
+                    style="font-size:16px;line-height:1.5;margin:0 0 16px 0;padding:0;">
+                    Thank you for registering for <strong class="title">
+                        <a style="color:#C00404;" href="%%xphp_event_url%%">Test - RC,</a>
+                    </strong>
+                    <span class="event_date">September 4, 2025</span>, at
+                    <span class="event_time">8:30 am.</span> Lorem ipsum dolor sit amet consectetur. Mi porttitor pellentesque amet a nunc nibh lacus. Pulvinar est orci mollis tristique netus tristique euismod sapien. Ornare duis risus sed purus non. Velit ornare amet duis pharetra enim commodo malesuada neque.
+                </p>
+
+                <!-- Buttons -->
+                <p class="ical_url button" style="margin:0;padding:0;">
+                    <a href="ical_url"
+                        style="background-color: #4E3629;border-radius:4px;color:#ffffff;display:inline-block;font-size:14px;letter-spacing:1px;margin:24px 0 0 0;padding:16px;text-decoration:none;text-transform:uppercase;">
+                        Add to calendar</a>
+                    <span
+                        style="display:block;font-size:12px;margin:8px 0 0 0;">Download this event to your personal calendar.</span>
+                </p>
+
+                <p class="cancel_url button" style="margin:0;padding:0;">
+                    <a href="cancel_url"
+                        style="background-color:#F0F2F3;border:1px solid #E7EAEC;border-radius:4px;color:#434343;display:inline-block;font-size:14px;letter-spacing:1px;margin:24px 0 0 0;padding:16px;text-decoration:none;text-transform:uppercase;">
+                        Cancel registration</a>
+                    <span
+                        style="display:block;font-size:12px;margin:8px 0 0 0;">Cancel this registration.</span>
+                </p>
+                <!-- End Buttons -->
+            </div>
+
+            <!-- Registration Response -->
+            <div class="registration_response"
+                style="border-bottom:2px solid #F0F2F3;font-size:14px;padding:32px;">
+                <p class="first_name"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>First name:</strong> Sam</p>
+                <p class="last_name"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Last name:</strong> Change</p>
+                <p class="waitlisted"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Waitlisted?:</strong> No</p>
+                <p class="wait_list_message"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Wait list message:</strong> Lorem ipsum dolor sit amet consectetur...</p>
+                <p class="affiliation"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Affiliation:</strong> Community Member</p>
+                <p class="email"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Email:</strong> letitejada@yahoo.com</p>
+                <p class="phone"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Phone:</strong> 000-000-0000</p>
+                <p class="quantity"
+                    style="border-bottom:1px solid #F0F2F3;font-size:14px;margin:0 0 8px 0;padding:0 0 8px 0;">
+                    <strong>Attendees:</strong> 1</p>
+                <p class="comments" style="font-size:14px;">
+                    <strong>Comments for organizer:</strong> These are comments or special instructions for the event organizer.</p>
+
+                <!-- Button -->
+                <p class="registration_button button" style="margin:0;padding:0;">
+                    <a href="#"
+                        style="background-color:#C00404;border-radius:4px;color:#ffffff;display:inline-block;font-size:14px;letter-spacing:1px;margin:24px 0 8px 0;padding:16px;text-decoration:none;text-transform:uppercase;">
+                        View Registrations for This Event</a>
+                </p>
+                <!-- End Button -->
+            </div>
+            <!-- End Registration Response -->
+        </div>
+        <!-- End Main -->
+
+        <!-- Footer -->
+        <div class="footer"
+            style="background-color:#f9f8f9;color:#434343;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;padding:32px;">
+            <p class="custom_fields" style="margin:0;">
+                <strong>Additional information:</strong> Lorem ipsum dolor sit amet consectetur. Mi porttitor pellentesque amet a nunc nibh lacus. Pulvinar est orci mollis tristique netus tristique euismod sapien. Ornare duis risus sed purus non. Velit  ornare amet duis pharetra enim commodo malesuada neque.
+            </p>
+        </div>
+
+        <p class="contact_info"
+            style="background-color:#E7EAEC;color:#434343;font-family:Helvetica, Arial, sans-serif;font-size:14px;margin:0;padding:24px 32px;text-align:center;">
+            For more information, please contact:
+            <a href='mailto:"contact_info"' style="color:#434343;font-weight:bold;">events@brown.edu</a>
+        </p>
+        <!-- End Footer -->
+    </div>
+</body>
+
+</html>

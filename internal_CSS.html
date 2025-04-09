@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal CSS</title>
+  <style>
+    body {
+      background-color: #F0F2F3;
+      margin: 0;
+      padding: 24px 0 40px 0;
+      width: 100%;
+      min-height: 100%; 
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 4px;
+      margin: auto;
+      max-width: 600px;
+      overflow: hidden;
+      width: 96%;
+      font-family: Helvetica, Arial, sans-serif;
+      color: #434343;
+    }
+
+    .header {
+      background-color: #4E3629;
+      border-bottom: 2px solid #F0F2F3;
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-family: 'Times New Roman', serif;
+      font-size: 40px;
+      font-weight: normal;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .main {
+      padding: 32px;
+      border-bottom: 2px solid #F0F2F3;
+    }
+
+    h2.title {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 28px;
+      margin: 0 0 16px 0;
+    }
+
+    .main p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0 0 16px 0;
+    }
+
+    a.primary-button,
+    a.secondary-button,
+    a.tertiary-button {
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-top: 24px;
+      padding: 16px;
+    }
+
+    a.primary-button {
+      background-color: #C00404;
+      color: #ffffff;
+    }
+
+    a.secondary-button {
+      background-color: #4E3629;
+      color: #ffffff;
+    }
+
+    a.tertiary-button {
+      background-color: #F0F2F3;
+      border: 1px solid #E7EAEC;
+      color: #434343;
+    }
+
+    .note {
+      font-size: 12px;
+      margin-top: 8px;
+      display: block;
+    }
+
+    .registration_response p {
+      font-size: 14px;
+      border-bottom: 1px solid #F0F2F3;
+      padding-bottom: 8px;
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+
+    .footer {
+      background-color: #f9f8f9;
+      font-size: 14px;
+      line-height: 22px;
+      padding: 32px;
+    }
+
+    .footer p{
+        margin: 0;
+    }
+
+    .contact_info {
+      background-color: #E7EAEC;
+      text-align: center;
+      font-size: 14px;
+      padding: 24px 32px;
+    }
+
+    .contact_info a {
+      color: #434343;
+      font-weight: bold;
+    }
+
+    @media print {
+      div,
+      .container,
+      .main,
+      .footer,
+      .contact_info {
+        all: unset;
+        color: #000 !important;
+        background: none !important;
+        width: auto !important;
+        text-align: left !important;
+      }
+
+      h1,
+      h2 {
+        color: #000 !important;
+        font-weight: bold !important;
+        margin-bottom: 16px !important;
+        text-align: left !important;
+      }
+
+      .button {
+        display: none !important;
+        visibility: hidden !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Events@Brown</h1>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <h2 class="title">Events@Brown notification: Test - RC: Registration Received</h2>
+      <p>
+        Thank you for registering for <strong><a href="%%xphp_event_url%%" style="color:#C00404;">Test - RC</a></strong>,
+        <span class="event_date">September 4, 2025</span>, at <span class="event_time">8:30 am.</span> Lorem ipsum dolor sit amet consectetur. Mi porttitor pellentesque amet a nunc nibh lacus. Pulvinar est orci mollis tristique netus tristique euismod sapien. Ornare duis risus sed purus non. Velit ornare amet duis pharetra enim commodo malesuada neque.
+      </p>
+
+      <!-- Buttons -->
+      <div class="button">
+        <a href="ical_url" class="secondary-button">Add to calendar</a>
+        <span class="note">Download this event to your personal calendar.</span>
+      </div>
+
+      <div class="button">
+        <a href="cancel_url" class="tertiary-button">Cancel registration</a>
+        <span class="note">Cancel this registration.</span>
+      </div>
+    </div>
+
+    <!-- Registration Response -->
+    <div class="registration_response main">
+      <p><strong>First name:</strong> Sam</p>
+      <p><strong>Last name:</strong> Change</p>
+      <p><strong>Waitlisted?:</strong> No</p>
+      <p><strong>Wait list message:</strong> Lorem ipsum dolor sit amet consectetur...</p>
+      <p><strong>Affiliation:</strong> Community Member</p>
+      <p><strong>Email:</strong> letitejada@yahoo.com</p>
+      <p><strong>Phone:</strong> 000-000-0000</p>
+      <p><strong>Attendees:</strong> 1</p>
+      <p><strong>Comments for organizer:</strong> These are comments or special instructions for the event organizer.</p>
+
+      <div class="button">
+        <a href="#" class="primary-button">View Registrations for This Event</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p><strong>Additional information:</strong> Lorem ipsum dolor sit amet consectetur. Mi porttitor pellentesque amet a nunc nibh lacus. Pulvinar est orci mollis tristique netus tristique euismod sapien. Ornare duis risus sed purus non. Velit ornare amet duis pharetra enim commodo malesuada neque.</p>
+    </div>
+
+    <div class="contact_info">
+      For more information, please contact:
+      <a href="mailto:events@brown.edu">events@brown.edu</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
